@@ -125,7 +125,7 @@ footer > div {
     list-style-type: none;
 }
 
-.footerOptions > ul > li {
+.footerOptions > ul > li > a {
   font-size: 14px;
   font-weight: 300;
   color:#777777 ;
@@ -143,5 +143,5 @@ ul {
 
 a {
     text-decoration: none;
-    
+
 }
