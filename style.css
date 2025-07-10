@@ -10,7 +10,13 @@
 
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
 body {
+
    font: normal 300 1.0rem / 1.8 Poppins, sans-serif;
 }
 
@@ -127,7 +133,6 @@ footer > div {
 
 .footerOptions > ul > li > a {
   font-size: 14px;
-  font-weight: 100;
   color:#777777 ;
 }
 
@@ -182,4 +187,7 @@ a {
     margin-bottom: 1rem;
  }
 
+ footer {
+    padding-bottom: 3rem;
+ }
  
