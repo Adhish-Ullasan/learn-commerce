@@ -109,3 +109,25 @@ nav ul select {
     display:flex;
     flex-basis: 10%;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    color:#777777 ;
+}
+
+.footerOptions > ul {
+    list-style-type: none;
+}
+
+.footerOptions > ul > li {
+  font-size: 14px;
+  font-weight: 300;
+  color:#777777 ;
+}
