@@ -119,6 +119,7 @@ footer > div {
     font-size: 14px;
     font-weight: 300;
     color:#777777 ;
+    margin-bottom: 1.5rem;
 }
 
 .footerOptions > ul {
@@ -169,6 +170,13 @@ a {
 
  .footerOptions {
     line-height: 2.5rem;
+ }
+
+ footer > div > div >div:first-child > img {
+    width: 105px;
+    height: 25px;
+    margin-bottom: 1rem;
+
  }
 
  
