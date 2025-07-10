@@ -158,19 +158,27 @@ a {
     border: 1px solid var(--secondary-color);
  }
 
+ .call > div:first-child > img {
+    max-width: 40px;
+ }
+
  .call > div:last-child > p {
     color: #777777;
-    font-size: 14px;
+    font-size: 13px;
  }
  
  .call > div:last-child {
-     padding: 1.5rem 1rem 1.5rem;
+     padding: 1rem 1rem 1rem;
+     line-height: 1.5rem;
+
  }
 
  .call > div:first-child {
     display: flex;
     align-self: center;
  }
+
+
 
  .footerOptions {
     line-height: 2rem;
@@ -205,4 +213,11 @@ a {
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--secondary-color);
  }
+
+  .call > div:last-child  > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 20px;
+  }
  
