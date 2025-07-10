@@ -190,4 +190,9 @@ a {
  footer {
     padding-bottom: 3rem;
  }
+
+ footer > div:last-child {
+    border-top: 1px solid var(--secondary-color);
+    margin-top: 2rem;
+ }
  
