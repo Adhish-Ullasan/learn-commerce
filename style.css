@@ -189,10 +189,20 @@ a {
 
  footer {
     padding-bottom: 3rem;
+      font: normal 300 1.0rem / 1.8 Poppins, sans-serif;
+
  }
 
  footer > div:last-child {
-    border-top: 1px solid var(--secondary-color);
-    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    color: #777777;
+ }
+
+ footer > div:first-child {
+
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--secondary-color);
  }
  
