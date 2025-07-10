@@ -110,8 +110,8 @@ nav ul select {
 
 footer > div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    column-gap: 1rem;
     
 }
 
@@ -134,6 +134,7 @@ footer > div {
 footer > div > div {
     padding-left: 10px;
     padding-right: 10px;
+    min-width: 20%;
 }
 
 ul {
@@ -145,3 +146,29 @@ a {
     text-decoration: none;
 
 }
+
+.call {
+    display: flex;
+    align-items: anchor center;
+    border: 1px solid var(--secondary-color);
+ }
+
+ .call > div:last-child > p {
+    color: #777777;
+    font-size: 14px;
+ }
+ 
+ .call > div:last-child {
+     padding: 1.5rem 1rem 1.5rem;
+ }
+
+ .call > div:first-child {
+    display: flex;
+    align-self: center;
+ }
+
+ .footerOptions {
+    line-height: 2.5rem;
+ }
+
+ 
