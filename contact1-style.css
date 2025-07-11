@@ -3,3 +3,26 @@ form > div:first-child {
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
 }
+
+.imageText {
+    background: url(./assets/contact-header-bg.jpg);
+    display: flex;
+    align-items: anchor-center;
+    justify-content: center;
+    max-width: 1168px;
+    min-height: 450px;
+    /* padding-left: 10px; */
+    margin: auto
+}
+
+.imageText > h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.5rem;
+    text-align: center;
+
+}
+
+.imageText > h1 > #secondline {
+    font-size: 16px;
+}

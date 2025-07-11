@@ -56,3 +56,13 @@ body {
     border: 1px solid var(--secondary-color);
     background-color: #f8f8f8
 }
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+ 
+    padding: 0;
+}
