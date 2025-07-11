@@ -51,7 +51,8 @@ body {
 }
 
 .primaryInput {
-
+    padding: 8px 10px;
+    min-height: 28px;
     border: 1px solid var(--secondary-color);
     background-color: #f8f8f8
 }
