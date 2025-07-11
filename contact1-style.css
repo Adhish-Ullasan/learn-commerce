@@ -12,7 +12,10 @@ form > div:first-child {
     max-width: 1168px;
     min-height: 450px;
     /* padding-left: 10px; */
-    margin: auto
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:3rem;
 }
 
 .imageText > h1 {
@@ -25,4 +28,22 @@ form > div:first-child {
 
 .imageText > h1 > #secondline {
     font-size: 16px;
+}
+
+.contact-questions {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.contactInfo {
+    flex-basis: 50%;
+}
+
+.enquiry {
+    flex-basis: 50%;
+}
+
+p {
+    font-size: 14px;
+    color: #777777;
 }
