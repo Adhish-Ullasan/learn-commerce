@@ -49,3 +49,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.primaryInput {
+
+    border: 1px solid var(--secondary-color);
+    background-color: #f8f8f8
+}
