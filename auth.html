@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link href="./style.css" rel="stylesheet">
-    <link href="./responsive-style.css" rel="responsive-style">
+    <link href="./responsive-style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AuthPage</title>
@@ -14,8 +14,8 @@
 
             <div>
                 <ul>
-                    <a href="#"><li>Sign in</li></a>
-                    <a href="#"><li>Register</li></a>
+                    <li id="login-btn"><a href="#">Sign in</a></li>
+                    <li id="register-btn"><a href="#">Register</a></li>
                 </ul>
             </div>
 
@@ -47,6 +47,35 @@
 
            </div>
 
+
+           <!-- login -->
+           <div id="login">
+                <div class="name">
+                    <label for="name-field-l" name="username">Username or email address *</label>
+                    <input id="name-field-l" type="text" required>
+                </div>
+
+                <div class="password">
+                    <label for="password-field-l" name="username">Password *</label>
+                    <input id="password-field-l" type="password" required>
+                </div>
+
+                <div class="login-button">
+                    <div>
+                        <button>LOG IN<span><img src="./assets/right-arrow.png" alt="right-arrow"></span></button>
+                    </div>
+                    
+                    <div>
+                        <input id="remember-me" type="checkbox" name="rememberme" required>
+                        <label for="remember-me" name="terms">Remember Me</label>
+                    </div>
+
+                    <div class="forgot-password">
+                    <a href="#">Forgot Your Password?</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="seperator">
 
             </div>
@@ -67,6 +96,98 @@
            </div>
         </form>
     </section>
+
+    <!-- <section id="login">
+
+        <form id="form-contianer-l">
+            <div class="form-box-l">
+ 
+             <div>
+                 <ul>
+                     <li id="register-btn"><a href="#">Sign in</a></li>
+                     <li id="login-btn"><a href="#">Register</a></li>
+                 </ul>
+             </div>
+ 
+             <div class="seperator">
+ 
+             </div>
+     
+            <div id="register">
+                 <div class="name">
+                     <label for="name-field-l" name="username">Username or email address *</label>
+                     <input id="name-field-l" type="text" required>
+                 </div>
+ 
+                 <div class="password">
+                     <label for="password-field-l" name="username">Password *</label>
+                     <input id="password-field-l" type="password" required>
+                 </div>
+ 
+                 <div class="login-button">
+                     <div>
+                         <button>LOG IN<span><img src="./assets/right-arrow.png" alt="right-arrow"></span></button>
+                     </div>
+                     
+                     <div>
+                         <input id="remember-me" type="checkbox" name="rememberme" required>
+                         <label for="remember-me" name="terms">Remember Me</label>
+                     </div>
+
+                     <div class="forgot-password">
+                        <a href="#">Forgot Your Password?</a>
+                     </div>
+                 </div>
+ 
+            </div>
+ 
+             <div class="seperator">
+ 
+             </div>
+ 
+             <div>
+                 <p> Or sign in with</p>
+             </div>
+ 
+             <div class="buttons">
+                 <div class="button-wrap">
+                     <button><span><img src="./assets/g-icon.png" alt="google icon"></span>Login With Google</button>
+                 </div>
+                 <div class="button-wrap">
+                     <button><span><img src="./assets/f-icon.png" alt="facebook icon"></span>Login With FaceBook</button>
+                 </div>
+             </div>
+     
+            </div>
+         </form>
+
+    </section> -->
+
+
+
+  <script>
+     
+     const registerBtn = document.getElementById("register-btn");
+     const loginBtn = document.getElementById("login-btn");
+     const login = document.getElementById("login");
+     const signUp = document.getElementById("sign-up");
+
+    registerBtn.addEventListener('click', function (e) {
+        registerBtn.style.display="block";
+        login.style.display="none";
+        console.log("signUp")
+
+    })
+
+    loginBtn.addEventListener("click" , function (e) {
+        loginBtn.style.display="block";
+        signUp.style.display="none";
+
+    })
+
+  </script>
+    
+
 </body>
 
 </html>
