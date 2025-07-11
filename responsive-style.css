@@ -1,5 +1,5 @@
 @media screen and (max-width:575px) {
-    .sign-up-button{
+    .primaryButton {
         display: flex;
         flex-direction: column-reverse;
         gap: 20px
@@ -9,7 +9,7 @@
         flex-direction: column;
         gap:20px;
     } 
-    .sign-up-button button {
+    .primaryButton button {
         display: flex;
         justify-content: center;
         align-items: center;
