@@ -104,3 +104,13 @@ li p {
 #contact {
     margin-bottom: 3rem;
 }
+
+.storeLocations {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.storeLocations > div {
+    display: flex;
+    column-gap: 2rem;
+}
