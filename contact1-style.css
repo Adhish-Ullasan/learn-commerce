@@ -143,6 +143,5 @@ h4 {
     margin-top: 2rem;
 }
 
-.primaryButton > div button {
+#viewMap > div button {
     border: none;
-}
