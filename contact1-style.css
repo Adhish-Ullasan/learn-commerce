@@ -85,3 +85,18 @@ form {
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+
+.vectors {
+
+    width: 20px;
+    padding-right: 1rem;
+}
+
+li {
+    display: flex;
+    margin-top: 1rem;
+}
+
+li p {
+    padding-top: 1rem;
+}
