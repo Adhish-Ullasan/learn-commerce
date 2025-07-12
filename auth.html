@@ -9,13 +9,13 @@
 </head>
 <body>
     <section id="sign-up">
-        <form id="form-contianer">
+        <form id="form-contianer" name="register">
            <div class="form-box">
 
             <div>
                 <ul>
-                    <li id="login-btn"><a href="#">Sign in</a></li>
-                    <li id="register-btn"><a href="#">Register</a></li>
+                    <li id="login-btn">Sign in</li>
+                    <li id="register-btn" class="primary-color">Register</li>
                 </ul>
             </div>
 
@@ -24,63 +24,60 @@
             </div>
     
            <div id="register">
-                <div class="name">
-                    <label for="name-field" name="username">Your email address *</label>
-                    <input id="name-field" type="email" required>
+                <div class="input-box">
+                    <label for="name" name="username">Your email address *</label>
+                    <input id="name" type="text" >
                 </div>
 
-                <div class="password">
-                    <label for="password-field" name="username">Password *</label>
-                    <input id="password-field" type="password" required>
+                <div class="input-box">
+                    <label for="password" name="username">Password *</label>
+                    <input id="password" type="password" >
                 </div>
 
                 <div class="sign-up-button">
                     <div>
-                        <button>SIGN UP<span><img src="./assets/right-arrow.png" alt="right-arrow"></span></button>
+                        <button type="submit">SIGN UP<span ><img src="./assets/right-arrow.png" class="default-arrow" alt="right-arrow"></span><span><img src="./assets/white-right-arrow.png" class="white-arrow" alt="right-arrow"></span></button>
                     </div>
                     
                     <div>
-                        <input id="check" type="checkbox" name="terms&conditions" required>
-                        <label for="check" name="terms">I agree to the privacy policy *</label>
+                        <input id="check-box" type="checkbox" name="termsandconditions" >
+                        <label for="check-box" name="terms">I agree to the privacy policy *</label>
+                    </div>
+                </div>
+
+           </div>
+           <div id="login-form" class="hidden">
+                <div class="input-box">
+                    <label for="name-login" name="username">Username or Email address *</label>
+                    <input id="name-login" type="text" >
+                </div>
+
+                <div class="input-box">
+                    <label for="password-login" name="username">Password *</label>
+                    <input id="password-login" type="password" >
+                </div>
+
+                <div class="sign-up-button">
+                    <div>
+                        <button type="submit">LOG IN<span><img src="./assets/right-arrow.png"  class="default-arrow" alt="right-arrow"></span><span><img src="./assets/white-right-arrow.png" class="white-arrow" alt="right-arrow"></span></button>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <input id="check" type="checkbox" name="terms&conditions" >
+                            <label for="check" name="terms">Remember Me</label>
+                        </div>
+                        <a href="#" class="forgot-pass">Forgot Your Password?</a>
                     </div>
                 </div>
 
            </div>
 
-
-           <!-- login -->
-           <div id="login">
-                <div class="name">
-                    <label for="name-field-l" name="username">Username or email address *</label>
-                    <input id="name-field-l" type="text" required>
-                </div>
-
-                <div class="password">
-                    <label for="password-field-l" name="username">Password *</label>
-                    <input id="password-field-l" type="password" required>
-                </div>
-
-                <div class="login-button">
-                    <div>
-                        <button>LOG IN<span><img src="./assets/right-arrow.png" alt="right-arrow"></span></button>
-                    </div>
-                    
-                    <div>
-                        <input id="remember-me" type="checkbox" name="rememberme" required>
-                        <label for="remember-me" name="terms">Remember Me</label>
-                    </div>
-
-                    <div class="forgot-password">
-                    <a href="#">Forgot Your Password?</a>
-                    </div>
-                </div>
-            </div>
-
             <div class="seperator">
 
             </div>
 
-            <div>
+            <div class="sign-in-with">
                 <p> Or sign in with</p>
             </div>
 
@@ -97,99 +94,111 @@
         </form>
     </section>
 
-    <!-- <section id="login">
-
-        <form id="form-contianer-l">
-            <div class="form-box-l">
- 
-             <div>
-                 <ul>
-                     <li id="register-btn"><a href="#">Sign in</a></li>
-                     <li id="login-btn"><a href="#">Register</a></li>
-                 </ul>
-             </div>
- 
-             <div class="seperator">
- 
-             </div>
-     
-            <div id="register">
-                 <div class="name">
-                     <label for="name-field-l" name="username">Username or email address *</label>
-                     <input id="name-field-l" type="text" required>
-                 </div>
- 
-                 <div class="password">
-                     <label for="password-field-l" name="username">Password *</label>
-                     <input id="password-field-l" type="password" required>
-                 </div>
- 
-                 <div class="login-button">
-                     <div>
-                         <button>LOG IN<span><img src="./assets/right-arrow.png" alt="right-arrow"></span></button>
-                     </div>
-                     
-                     <div>
-                         <input id="remember-me" type="checkbox" name="rememberme" required>
-                         <label for="remember-me" name="terms">Remember Me</label>
-                     </div>
-
-                     <div class="forgot-password">
-                        <a href="#">Forgot Your Password?</a>
-                     </div>
-                 </div>
- 
-            </div>
- 
-             <div class="seperator">
- 
-             </div>
- 
-             <div>
-                 <p> Or sign in with</p>
-             </div>
- 
-             <div class="buttons">
-                 <div class="button-wrap">
-                     <button><span><img src="./assets/g-icon.png" alt="google icon"></span>Login With Google</button>
-                 </div>
-                 <div class="button-wrap">
-                     <button><span><img src="./assets/f-icon.png" alt="facebook icon"></span>Login With FaceBook</button>
-                 </div>
-             </div>
-     
-            </div>
-         </form>
-
-    </section> -->
-
 
 
   <script>
+
+        // switch-tabs login and register 
      
      const registerBtn = document.getElementById("register-btn");
      const loginBtn = document.getElementById("login-btn");
-     const login = document.getElementById("login");
-     const signUp = document.getElementById("sign-up");
+     const loginForm = document.getElementById('login-form')
+     const registerForm = document.getElementById('register')
+     
 
-    registerBtn.addEventListener('click', function (e) {
-        registerBtn.style.display="block";
-        login.style.display="none";
-        console.log("signUp")
 
-    })
-
+       // for login active
     loginBtn.addEventListener("click" , function (e) {
-        loginBtn.style.display="block";
-        signUp.style.display="none";
+        loginForm.classList.add('active')
+        loginForm.classList.remove('hidden')
+        registerForm.classList.remove('active')
+        registerForm.classList.add('hidden')
+        loginBtn.classList.add('primary-color');
+        registerBtn.classList.remove('primary-color');
+       
+        // update the formname to 'login'
+
+        const form = document.querySelector('form');
+        const formName = form.setAttribute('name', 'login')
 
     })
 
-  </script>
+        // for register active 
+    registerBtn.addEventListener("click" , function (e) {
+        registerForm.classList.add('active')
+        registerForm.classList.remove('hidden')
+        loginForm.classList.remove('active')
+        loginForm.classList.add('hidden')
+        registerBtn.classList.add('primary-color');
+        loginBtn.classList.remove('primary-color');
+
+        // update the formname to 'login'
+
+        const form = document.querySelector('form');
+        const formName = form.setAttribute('name', 'register')
+    })
+
+
+    const form =document.querySelector('form');
+
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+        const email = document.getElementById("name").value;
+        const password = document.getElementById("password").value;
+        const emailLogin = document.getElementById("name-login").value;
+        const passwordLogin = document.getElementById("password-login").value;
+        const formName = form.getAttribute('name')
+        
+        // console.log(email,"register-email");
+        // console.log(password, "register-password")
+        console.log(emailLogin,"login-email");
+        console.log(passwordLogin, "login-password")
+       
+
+        if (formName === 'register'){
+            if(!emailIsValid(email)){
+                alert("please enter a valid email.");
+                return;
+            }
+
+            if(password.length < 8){
+                alert("password must be minimum 8 charecters long.");
+                return;
+            }
+        }
+
+        else {
+            if(!emailIsValid(emailLogin)){
+                alert ("please enter a valid email");
+                return;
+            }
+            
+            if(passwordLogin.length < 8){
+                alert("password must be minimum 8 characters long.");
+                return;
+            }
+        }
+
+        window.location.href = 'home.html'; 
+
+
+    })
+
+        
+        function emailIsValid(input){
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input);
+
+        }
+
+
+
+
+
+</script>
     
 
-</body>
+ </body>
 
-</html>
+/</html>
 
 
