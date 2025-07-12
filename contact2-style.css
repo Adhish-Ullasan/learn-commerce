@@ -115,4 +115,30 @@ a {
 
   address {
     color: #777;
-    font-family: 'poppins' sans-serif; font: normal 300 1.0rem / 1.8 Poppins, sans-serif;  }
+    font-family: 'poppins' sans-serif; font: normal 300 1.0rem / 1.8 Poppins, sans-serif;  
+}
+
+.cards {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: anchor-center;
+    padding-top: 2rem;
+}
+
+h3 {
+
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.cards > div  {
+    text-align: center;
+}
+
