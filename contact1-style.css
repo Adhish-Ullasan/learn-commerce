@@ -79,3 +79,9 @@ form {
     position: absolute;
     left: 2%;
 }
+
+.office {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
