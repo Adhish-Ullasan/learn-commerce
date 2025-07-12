@@ -42,6 +42,10 @@ p {
     color: #777777;
 }
 
+a {
+    color: #777777;
+}
+
 .primaryInput {
 
     width: 100%;
@@ -97,9 +101,7 @@ li {
     margin-top: 1rem;
 }
 
-li p {
-    padding-top: 1rem;
-}
+
 
 #contact {
     margin-bottom: 3rem;
@@ -108,9 +110,35 @@ li p {
 .storeLocations {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    padding-top: 1rem;
 }
 
 .storeLocations > div {
     display: flex;
     column-gap: 2rem;
+}
+
+.Hr {
+
+    border-top: 1px solid var(--secondary-color);
+    margin-bottom:2rem;
+}
+
+#stores h2 {
+
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+h4 {
+    padding-top: 2rem;
+}
+
+.primaryButton {
+    margin-top: 2rem;
+}
+
+.primaryButton > div button {
+    border: none;
 }
