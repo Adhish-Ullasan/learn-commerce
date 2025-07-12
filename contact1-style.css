@@ -111,11 +111,15 @@ li {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding-top: 1rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .storeLocations > div {
     display: flex;
     column-gap: 2rem;
+    justify-content: flex-end;
+    justify-self: center;
 }
 
 .Hr {
