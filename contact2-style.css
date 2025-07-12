@@ -43,13 +43,9 @@ position:absolute;
   text-decoration: none;
 }
 
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  min-height: 100vh;
-} */
+a {
+    color: #777;
+}
 
 /* .breadcrumb {
   display: flex;
@@ -113,3 +109,11 @@ position:absolute;
         padding-bottom: .5rem;
         padding-top: .5rem;
   }
+
+  .icons > div > img {
+    max-width: 20px;
+  }
+
+  address {
+    color: #777;
+    font-family: 'poppins' sans-serif; font: normal 300 1.0rem / 1.8 Poppins, sans-serif;  }
