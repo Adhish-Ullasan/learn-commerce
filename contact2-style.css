@@ -196,7 +196,6 @@ form > div > div {
 }
 
 form > div > div > div {
-    flex-basis: 45%;
     margin-bottom: 1rem;
 } 
 
@@ -223,4 +222,22 @@ form {
 #textarea::placeholder {
     position: absolute;
     left: 2%;
+}
+
+form > div > div > div {
+  width: 100%;
+}
+
+form > div > div > div  input {
+  width: 100%;
+}
+
+#foRm > form input {
+
+  border : 1px solid var(--secondary-color);
+}
+
+.primaryButton {
+  display: flex;
+  justify-content: center;
 }
