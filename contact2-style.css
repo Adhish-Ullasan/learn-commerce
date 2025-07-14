@@ -127,7 +127,6 @@ a {
 
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-bottom: 2rem;
 }
 
 .icons {
@@ -149,3 +148,33 @@ h3 {
     text-align: center;
 }
 
+.Hr {
+   
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#hr {
+
+  margin-bottom: 5rem;
+}
+
+.secondTitle {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.secondTitle p:first-of-type{
+  font-size: 16px;
+  color: #fcb941;
+  padding-bottom: 1rem;
+}
+
+.secondTitle p:last-of-type {
+
+  font-size: 14px;
+  color: #777;
+}
