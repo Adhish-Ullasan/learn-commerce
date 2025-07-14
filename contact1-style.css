@@ -80,10 +80,10 @@ form {
     background-color: #f8f8f8
 }
 
-/* #textarea::placeholder {
+#textarea::placeholder {
     position: absolute;
     left: 2%;
-} */
+}
 
 .office {
 
