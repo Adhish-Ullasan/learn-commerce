@@ -66,6 +66,7 @@ form {
     margin-top: 2rem;
     padding-left: 10px;
     padding-right: 10px;
+    box-sizing: border-box;
 }
 
 #textarea {
@@ -79,10 +80,10 @@ form {
     background-color: #f8f8f8
 }
 
-#textarea::placeholder {
+/* #textarea::placeholder {
     position: absolute;
     left: 2%;
-}
+} */
 
 .office {
 
