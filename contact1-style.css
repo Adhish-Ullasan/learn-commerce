@@ -148,16 +148,21 @@ h4 {
     border: none;
 }
 
-.responsive-map{
+.responsive-map{                                                    
 overflow: hidden;
-padding-bottom:56.25%;
+padding-bottom:30.25%;
 position:relative;
 height:0;
 }
 .responsive-map iframe{
 left:0;
 top:0;
-height:50%;
+height:100%;
 width:100%;
 position:absolute;
+}
+
+#googleMap {
+
+    padding-bottom: 2rem;
 }
