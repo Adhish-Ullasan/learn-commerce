@@ -3,14 +3,24 @@
     --secondary-color:#cccccc;
 }
 
+
 *{
     margin:0;
     padding: 0;
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins-Light.ttf);
 }
 
 body {
+
    font: normal 300 1.0rem / 1.8 Poppins, sans-serif;
 }
+
+
 
 header {
 background-color: var(--primary-color);
@@ -177,20 +187,35 @@ nav ul a {
     gap: 10px
 }
 
-.input-box input{
+.name input{
     padding: 8px 10px;
     min-height: 28px;
     border: 1px solid var(--secondary-color);
     background-color: #f8f8f8
 }
 
-.sign-up-button {
+.password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px
+}
+
+.password input{
+    padding: 8px 10px;
+    min-height: 28px;
+    border: 1px solid var(--secondary-color);
+    background-color: #f8f8f8
+}
+
+
+.primaryButton {
     display: flex;
     margin-bottom: 20px;
     gap:40px;
 }
 
-.sign-up-button img{
+.primaryButton img{
     margin-left: 10px;
     max-width: 19px;
     display: flex;
@@ -199,19 +224,19 @@ nav ul a {
 }
 
 
-.sign-up-button > div:nth-child(1){
+.primaryButton > div:nth-child(1){
     display: flex;
     flex-basis: 24%;
     min-height: 45px;
 }
 
-.sign-up-button > div:nth-child(2){
+.primaryButton> div:nth-child(2){
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
-.sign-up-button button{
+.primaryButton button{
     width: 100%;
     padding: 7px 10px;
     display: flex;
@@ -255,6 +280,23 @@ nav ul a {
     align-items: center;
 
 } 
+
+@media screen and (max-width:575px) {
+    .primaryButton{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    } 
+    .primaryButton button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 .forgot-pass{
     text-decoration: none;
     margin-left: 108px;
@@ -300,3 +342,112 @@ nav ul a {
 .secondary-color {
     color: #000;
 }
+
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    color:#777777 ;
+    margin-bottom: 1.5rem;
+}
+
+.footerOptions > ul {
+    list-style-type: none;
+}
+
+.footerOptions > ul > li > a {
+  font-size: 14px;
+  color:#777777 ;
+}
+
+footer > div > div {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 20%;
+}
+
+ul {
+ 
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.call {
+    display: flex;
+    align-items: anchor center;
+    border: 1px solid var(--secondary-color);
+ }
+
+ .call > div:first-child > img {
+    max-width: 40px;
+ }
+
+ .call > div:last-child > p {
+    color: #777777;
+    font-size: 13px;
+ }
+ 
+ .call > div:last-child {
+     padding: 1rem 1rem 1rem;
+     line-height: 1.5rem;
+
+ }
+
+ .call > div:first-child {
+    display: flex;
+    align-self: center;
+ }
+
+
+
+ .footerOptions {
+    line-height: 2rem;
+ }
+
+ footer > div > div >div:first-child > img {
+    width: 105px;
+    height: 25px;
+    margin-bottom: 1.5rem;
+
+ }
+
+ .footerOptions > h3 {
+    margin-bottom: 1rem;
+    font-size: 16px;
+ }
+
+ footer {
+    padding-bottom: 1rem;
+      font: normal 300 1.0rem / 1.8 Poppins, sans-serif;
+
+ }
+
+ footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    color: #777777;
+ }
+
+ footer > div:first-child {
+
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--secondary-color);
+ }
+
+  .call > div:last-child  > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 20px;
+  }
+ 

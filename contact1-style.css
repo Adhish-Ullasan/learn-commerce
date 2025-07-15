@@ -1,0 +1,168 @@
+.imageText {
+    background: url(./assets/contact-header-bg.jpg);
+    display: flex;
+    align-items: anchor-center;
+    justify-content: center;
+    max-width: 1168px;
+    min-height: 450px;
+    /* padding-left: 10px; */
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:3rem;
+}
+
+.imageText > h1 {
+    color: #fff;
+    font-size: 40x;
+    line-height: 1.5rem;
+    text-align: center;
+
+}
+
+.imageText > h1 > #secondline {
+    font-size: 16px;
+}
+
+.contact-questions {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.contactInfo {
+    flex-basis: 50%;
+}
+
+.enquiry {
+    flex-basis: 50%;
+}
+
+p {
+    font-size: 14px;
+    color: #777777;
+}
+
+a {
+    color: #777777;
+}
+
+.primaryInput {
+
+    width: 100%;
+}
+
+form > div > div {
+    display: flex;
+    column-gap: 2.3rem;
+}
+
+form > div > div > div {
+    flex-basis: 45%;
+    margin-bottom: 1rem;
+} 
+
+form {
+
+    margin-top: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+#textarea {
+
+    margin-bottom: 1rem;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 28px;
+    border: 1px solid var(--secondary-color);
+    background-color: #f8f8f8
+}
+
+#textarea::placeholder {
+    position: absolute;
+    left: 2%;
+}
+
+.office {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.vectors {
+
+    width: 20px;
+    padding-right: 1rem;
+}
+
+li {
+    display: flex;
+    margin-top: 1rem;
+}
+
+
+
+#contact {
+    margin-bottom: 2rem;
+}
+
+.storeLocations {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 1rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.storeLocations > div {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: flex-end;
+    justify-self: center;
+}
+
+.Hr {
+
+    border-top: 1px solid var(--secondary-color);
+    margin-bottom:2rem;
+}
+
+#stores h2 {
+
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+h4 {
+    padding-top: 2rem;
+}
+
+.primaryButton {
+    margin-top: 2rem;
+}
+
+#viewMap > div button {
+    border: none;
+}
+
+.responsive-map{                                                    
+overflow: hidden;
+padding-bottom:30.25%;
+position:relative;
+height:0;
+}
+.responsive-map iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+#googleMap {
+
+    padding-bottom: 2rem;
+}
