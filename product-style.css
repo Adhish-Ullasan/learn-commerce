@@ -75,3 +75,15 @@ h1 {
         padding-top: 1rem;
         border-bottom: 1px solid var(--secondary-color)
   }
+
+  a {
+    color: #777;
+    font-size: 14px;
+}
+
+.filterNav {
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 25%;
+}
