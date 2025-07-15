@@ -1,0 +1,29 @@
+:root {
+    --primary-color:#333333;
+    --secondary-color:#cccccc;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+   font: normal 300 1.0rem / 1.8 Poppins, sans-serif;
+}
+
+.home-container {
+    max-width: 1188px;
+    margin:0 auto;
+}
+
+#bg-img .home-container > div {
+  
+    /* background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 30%,30%, cover;
+	background-position: 70% 50%,25% 50%,center;
+    height: 80vh;
+	width: 90%;
+    background:  url(./assets/home-bg1.jpg)  , url(./assets/home-bg-2.png)40%;
+          */
+}
