@@ -1,0 +1,21 @@
+.pageTitle {
+    background: url(./assets/contactustwo.jpg);
+    min-height: 174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+
+}
+
+#pageLine {
+    color: #fcb941;
+    font-size: 20px;
+    display: block;
+    position: relative;
+    left: -35%;
+}
+
+h1 {
+    line-height: 2.5rem;
+}
