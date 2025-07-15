@@ -1,8 +1,10 @@
 :root {
-    --primary-color:#333333;
-    --secondary-color:#cccccc;
+    --primary-color:slategrey;
+    --background-color: beige;
+    --background:linear-gradient(0deg, rgba(243, 244, 253, 0.911), rgb(186, 192, 194) 40%, rgb(32, 29, 29))
+    ;
+    
 }
-
 
 *{
     margin:0;
