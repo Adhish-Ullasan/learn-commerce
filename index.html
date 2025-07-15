@@ -5,14 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn commerce</title>
     <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shuffle" />
 </head>
 <body>
     <header>
-        <nav class="container">
-            <ul>
-                <li>Home</li>
-            </ul>
-        </nav>
+       
+        <div class="contianer">
+
+
+                <!-- nav  -->
+
+
+
+            <nav>
+                <a href="#"><span class="material-symbols-outlined">call</span><P>Call: +0123 456 789</P></a>
+                <ul>
+                    <li id="currency">
+                        <select id="currency" name="currency">
+                            <option>USD</option>
+                            <option>EUR</option>
+                        </select>
+                    </li>
+                    <li id="language">
+                        <select id="language" name ="language">
+                            <option>English</option>
+                            <option>French</option>
+                            <option>Spanish</option>
+                        </select>
+                    </li>
+                    <li id= "signin/signup">
+                        <a href="/auth.html" rel="reg-page">Sign In/Sign Up</a>
+                    </li> 
+                </ul>
+            </nav>
+            <div class="hr"></div>
+
+        
+
+               <!-- bottom-nav -->
+
+
+
+            <div id="bottom-nav">
+                <div>
+                    <img src="./assets/logo.png" alt="logo">
+                </div>
+                
+
+                <div class="search-input">
+                    <img src="./assets/search.svg" alt="search icon">
+                    <input type="search" id="search-bar" name="searchbar" required placeholder="search product...">
+                </div>
+                <div >
+                    <div>
+                        <a href="#"><img src="./assets/compare.png" alt="Compare icon"></a>
+                        <p>Compare</p>
+                    </div>
+                    
+                    <div>
+                        <a href="#"><img src="./assets/wishlist.png" alt="whishlist"></a>
+                        <p>whishlist</p>
+                    </div>
+                    
+                    <div>
+                        <a href="#"><img src="./assets/cart.png" alt="Cart"></a>
+                        <p>Cart</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
     </header>
+    <section id="sign-up" style="padding: 100px 0px;">
+        <form>
+           <div>
+
+            <div class="name">
+                <label for="name-field" name="username">Username or email address *</label>
+                <input id="name-field" type="text" required>
+            </div>
+            <div class="password">
+                <label for="name-field" name="username">Password *</label>
+                <input id="name-field" type="password" required>
+            </div>
+
+           </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contianer">
+            <div>
+                <div>
+                    <img src="./assets/logo-footer.png" alt="">
+                </div>
+                <div class="description">
+                    <p>
+                        Praesent dapibus, neque id cursus<br>
+                        tortor neque egestas augue, <br>
+                        eu vulputate magna eros eu erat
+                    </p>
+                </div>
+                <div class="call">
+                    <div>
+                        <img src="./assets/call-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Got Question? Call us 24/7</p>
+                        <a href="#">Call: +0123 456 789</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerOptions">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>
+                        <a href="#">About Molla</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#">How to shop on Molla</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerOptions">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li>
+                        <a href="#">Payment Methods</a>
+                    </li>
+                    <li>
+                        <a href="#">Money-back gaurantee!</a>
+                    </li>
+                    <li>
+                        <a href="#">Returns</a>
+                    </li>
+                    <li>
+                        <a href="#">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms and conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerOptions">
+                <h3>My Account</h3>
+                <ul>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="#">View Cart</a>
+                    </li>
+                    <li>
+                        <a href="#">My wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Track My Order</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contianer">
+            <div>
+                <p>Copyright © 2025 Molla Store. All Rights Reserved.</p>
+            </div>
+            <div>
+                <img src="./assets/payments.png" alt="">
+            </div>
+        </div>
+    </footer>
+    
+   
 </body>
 </html>
