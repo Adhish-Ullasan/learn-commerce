@@ -283,28 +283,7 @@ nav ul a {
 
 } 
 
-@media screen and (max-width:575px) {
-    .primaryButton{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 20px
-    }
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-    } 
-    .primaryButton button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-.forgot-pass{
-    text-decoration: none;
-    margin-left: 108px;
-    color: #666666;
-    font-size: 14px;
-}
+
 
 .button-wrap button > span{
     display: flex;
@@ -452,4 +431,3 @@ a {
     font-weight: 400;
     font-size: 20px;
   }
- 
