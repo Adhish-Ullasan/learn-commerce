@@ -85,10 +85,27 @@ h1 {
 
     display: flex;
     justify-content: space-between;
-    max-width: 25%;
+    flex-basis: 30%;
 }
 
 #black {
     color: black;
+}
+
+.toolbox {
+  display: flex;
+  flex-basis: 68%;
+  justify-content: space-between;
+}
+
+.toolbox > div {
+  display: flex;
+
+}
+
+.productnav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
 }
 
