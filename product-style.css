@@ -207,3 +207,7 @@ h1 {
 .primaryButton {
   justify-content: center;
 }
+
+.drop {
+  flex-basis: 30%;
+}
