@@ -179,24 +179,31 @@ h1 {
 }
 
 .productCards > div {
-
-  max-width: 250px;
-  min-height: 250px;
+  max-width: 260px;
 }
 
  img {
   width:100%;
-  height:100%;
+  /* height:70%; */
 }
 
-/* .productCards {
+.productCards {
 
   display: grid;
   grid-template-columns: repeat(3,1fr);
   row-gap: 2rem;
-} */
+}
 
 .wrapper {
   display: flex;
   justify-content: space-around;
+}
+
+.productCards > div > div {
+
+  text-align: center;
+}
+
+.primaryButton {
+  justify-content: center;
 }
