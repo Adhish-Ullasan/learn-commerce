@@ -1,20 +1,57 @@
 .container-fluid {
     max-width: 100%;
     margin:0 auto;
-    margin-bottom:60px;
+    margin-bottom:110px;
     
 }
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.hr-line {
+    border-bottom: 1px solid #d2d0d0;
+    margin-bottom: 60px;
+}
+
 
  #bg-img  {
     max-width:100%;
     min-height: 100vh;
     background:  url(./assets/home-bg1.jpg); 
-    margin-bottom: -53px;     
     background-repeat: no-repeat;
    
 
 
 }
+
+.bg-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 28%;
+    left: 16%;
+    color:white
+
+}
+
+.bg-h3 {
+    font-size: 40px;
+}
+
+.bg-h4 {
+    font-size: 14px;
+    color: #fcb941;
+}
+
+.bg-h1 {
+    font-size: 70px;
+}
+
 #img1 {
     background: url(./assets/home-bg-2.png);
     max-width: 100%;
@@ -29,7 +66,11 @@
 }
   
 #logo-slider {
-    margin-bottom:62px ;
+    margin-bottom:70px ;
+}
+
+.logo {
+    margin-bottom: 50px;
 }
 
 
@@ -80,7 +121,20 @@
     }
  }
 
+.logo-p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bg-h4 {
+    
+}
+
   /* banner */
+
+  #banner {
+    margin-bottom: 30px;
+  }
 
   .banner-box {
      display: flex;
@@ -93,7 +147,7 @@
    
     max-width: 350px;
     position: relative;
-    margin-bottom: 62px;
+    margin-bottom: 70px;
 }
 
 .banner-wrap img {
@@ -263,16 +317,25 @@
     display: grid;
     place-content: center;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
 }
 
+.video-p p{
+    font-size: 30px;
+    color: white;
+}
+
+.video-h  h3{
+    font-size: 50px;
+    color: white;
+}
 
 
 /* form */
 
 #stay-form {
-    margin-bottom:50px;
+    margin-bottom:90px;
 }
 .form-content {
     display: flex;
@@ -347,3 +410,23 @@
     justify-content: center;
     align-items: center;
 }
+#blogs {
+    margin-bottom: 70px;
+}
+
+ /* instagram */
+
+ .insta-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+ }
+
+ .insta-h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+ }
