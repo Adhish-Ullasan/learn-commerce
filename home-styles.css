@@ -58,6 +58,8 @@ a {
     min-height: 760px
 } 
 
+/* logo */
+
 :root {
     --item-count:8;
     --width:100px;
@@ -74,18 +76,6 @@ a {
 }
 
 
- /* brand logos */
-
-
- /* .logo-wrapper {
-    max-width:277px;
-    min-height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
- } */
-
  .brand-logos {
     display: flex;
     gap:20px;
@@ -96,29 +86,8 @@ a {
     height:var(--height);
     position: relative;
     overflow: hidden;
-
- }
- .brand-logos > img {
-    /* position: absolute; */
-    /* width: var(--width); */
-    /* height: var(--height); */
+    height: var(--height); 
     object-fit: contain;
-    left:100%;
-    animation: autoRunSlider var(--durartion)
-    linear infinite;
-    animation-delay: calc((var(--pos)-1)*(var(--durartion) / var(--item-count)));
-
- }
-
- @keyframes autoRunSlider {
-
-    from {
-        left:100%;
-
-    }
-    to {
-        left:calc(var(--width)*-1)
-    }
  }
 
 .logo-p {
@@ -126,9 +95,23 @@ a {
     margin-bottom: 30px;
 }
 
-.bg-h4 {
-    
+.date a{
+    font-size:13px;
+    color:#333333
 }
+
+.blog-title a {
+    font-size: 16px;
+    color: black;
+    font-weight: 900;
+}
+
+.read-more a{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(29, 28, 28);
+}
+
 
   /* banner */
 
@@ -394,6 +377,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 41px;
+    margin-top: 20px;
 }
 
 .blog-title {
@@ -409,6 +393,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:13px;
+    padding-bottom: 15px;
 }
 #blogs {
     margin-bottom: 70px;
@@ -430,3 +416,21 @@ a {
     align-items: center;
     margin-bottom: 30px;
  }
+
+ /* hover */
+
+ .card-1:hover {
+    box-shadow: 15px 10px 20px 10px whitesmoke;
+    
+ }
+ .read-more a:hover {
+    color: #fcb941;
+ }
+
+ .date a:hover{ 
+    color:#fcb941;
+}
+
+.blog-title a:hover  {
+    color: #fcb941;
+} 
