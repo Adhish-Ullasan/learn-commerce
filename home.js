@@ -215,6 +215,8 @@ const createBanner = (banner1 , bannerContainer) => {
 createBanner(bannerSection, 'banner-container');
 
 
+// fetching API
+
 
     let dataArr;
 
