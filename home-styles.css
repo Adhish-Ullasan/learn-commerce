@@ -170,7 +170,7 @@ a {
     color:#fcb941;
 }
 
-.button-wrap { 
+.button-cover { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,7 +275,8 @@ a {
 
 .grid-h {
     font-size: 50px;
-    color:white
+    color:white;
+    
 }
 
 .gird-p2 p {
@@ -434,3 +435,10 @@ a {
 .blog-title a:hover  {
     color: #fcb941;
 } 
+
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}

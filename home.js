@@ -171,7 +171,7 @@ const createBanner = (banner1 , bannerContainer) => {
                                 <div class="banner-h4">
                                 <h4>${homeBanner.h4}<h4>
                                 </div>
-                                <div class="button-wrap">
+                                <div class="button-cover">
                                     <button class="banner-button">${homeBanner.button}</button>
                                 </div>
                             </div>
@@ -197,7 +197,7 @@ const createBanner = (banner1 , bannerContainer) => {
                                     <div class="banner-p2">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in corrupti veniam beatae perspiciatis aperiam nobis, nemo quam blanditiis minus.</p>
                                     </div>
-                                    <div class="button-wrap">
+                                    <div class="button-cover">
                                         <button class="banner-button">DISCOVER NOW</button>
                                     </div>
                                 </div>
@@ -215,13 +215,13 @@ const createBanner = (banner1 , bannerContainer) => {
 createBanner(bannerSection, 'banner-container');
 
 
-// fetching API
 
 
-    let dataArr;
+const btn = document.getElementById("playbutton");
 
- fetch('https://687a124fabb83744b7eb4962.mockapi.io/api/learn/commerce-prodscts').then(res=> res.json()).then(data=> {
-    dataArr = data
+btn.addEventListener("submit" , function(){
+    const vid = document.getElementById("video-file");
+    vid.classList.remove('hidden');
+    vid.classList.add('show');
 })
 
-console.log(dataArr)
