@@ -88,6 +88,10 @@ h1 {
     flex-basis: 30%;
 }
 
+.filterNav > a {
+  color: #fcb941;
+}
+
 #black {
     color: black;
 }
