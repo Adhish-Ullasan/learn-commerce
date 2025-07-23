@@ -59,44 +59,47 @@
                                     <option value="price-desc">Sort by price: high to low</option>
                                 </select>
                             </div>
-                            <div class="sortingButton">
-                                <a href="#">
-                                    <svg width="16" height="10">
-                                        <rect x="0" y="0" width="4" height="4"></rect>
-                                        <rect x="6" y="0" width="4" height="4"></rect>
-                                        <rect x="0" y="6" width="4" height="4"></rect>
-                                        <rect x="6" y="6" width="4" height="4"></rect>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg width="10" height="10">
-                                        <rect x="0" y="0" width="4" height="4"></rect>
-                                        <rect x="6" y="0" width="10" height="4"></rect>
-                                        <rect x="0" y="6" width="4" height="4"></rect>
-                                        <rect x="6" y="6" width="10" height="4"></rect>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg width="16" height="10">
-                                        <rect x="0" y="0" width="4" height="4"></rect>
-                                        <rect x="6" y="0" width="4" height="4"></rect>
-                                        <rect x="12" y="0" width="4" height="4"></rect>
-                                        <rect x="0" y="6" width="4" height="4"></rect>
-                                        <rect x="6" y="6" width="4" height="4"></rect>
-                                        <rect x="12" y="6" width="4" height="4"></rect>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg width="22" height="10">
-                                        <rect x="0" y="0" width="4" height="4"></rect>
-                                        <rect x="6" y="0" width="4" height="4"></rect>
-                                        <rect x="12" y="0" width="4" height="4"></rect>
-                                        <rect x="0" y="6" width="4" height="4"></rect>
-                                        <rect x="6" y="6" width="4" height="4"></rect>
-                                        <rect x="12" y="6" width="4" height="4"></rect>
-                                    </svg>
-                                </a>
-                            </div>
+                            <form action="get">
+                                    <div class="sortingButton">
+                                       <a href="#">
+                                        <svg width="10" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>                                                <rect x="6" y="0" width="10" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="10" height="4"></rect>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="10" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="4" height="4"></rect>                                                <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="4" height="4"></rect>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="16" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="4" height="4"></rect>
+                                            <rect x="12" y="0" width="4" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="4" height="4"></rect>
+                                            <rect x="12" y="6" width="4" height="4"></rect>
+                                            </svg>                                        
+                                        </a>
+                                    <a href="#">
+                                        <svg width="22" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="4" height="4"></rect>
+                                            <rect x="12" y="0" width="4" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="4" height="4"></rect>
+                                            <rect x="12" y="6" width="4" height="4"></rect>
+                                        </svg>
+                                        <input type="hidden" class="layout-type" name="layout-type" value="#">
+                                        <input type="hidden" class="device-width" name="device-width" value="#">
+                                        <input type="hidden" class="life-time" name="life-time" value="#">
+                                    </a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
