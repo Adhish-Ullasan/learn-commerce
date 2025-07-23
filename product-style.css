@@ -224,6 +224,11 @@ h1 {
   gap: 1rem;
 }
 
+.sort > div p {
+  color: #000;
+  font-weight: 500;
+}
+
 .sortingButton {
 
   display: grid;
