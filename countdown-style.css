@@ -1,16 +1,5 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
+@import url(../global.css);
 
 /* general styling */
 :root {
@@ -33,7 +22,7 @@ body {
   display: flex;
 }
 
-.container {
+.timer {
   margin: 0 auto;
   text-align: center;
 }
@@ -49,7 +38,7 @@ li {
   font-size: 1.5em;
   list-style-type: none;
   padding: 1em;
-  color:green;
+  color: #a6c76c;;
 }
 
 li span {
@@ -71,3 +60,4 @@ li span {
     font-size: calc(3.375rem * var(--smaller));
   }
 }
+
