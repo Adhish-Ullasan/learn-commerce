@@ -219,3 +219,9 @@ h1 {
 .sort {
   gap: 1rem;
 }
+
+.sortingButton {
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
