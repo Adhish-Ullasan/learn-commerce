@@ -226,3 +226,115 @@ btn.addEventListener("submit" , function(){
     vid.classList.add('show');
 })
 
+
+// bset selling products
+
+
+const product = [
+    {
+        image: "./assets/shoelow.jpg",
+        price: "77.99",
+        cart: "Add to cart",
+        des: "UA Spawn Low"
+    },
+    {
+        image: "./assets/fanorak.jpg",
+        price: "76.99",
+        cart: "Add to cart",
+        des: "The North Face Fanorack 2.0"
+    },
+    {
+        image: "./assets/sleepingbag.jpg",
+        price: "299.99",
+        cart: "Add to cart",
+        des: "Small Sleeping Bag"
+    },
+    {
+        image: "./assets/jacket.jpg",
+        price: "76.99",
+        cart: "Add to cart",
+        des: "WaterTight jacket"
+    },
+
+]
+const bestSeller = (pCard, pContainer) => {
+    const productContainer = document.getElementById(pContainer);
+    let productList ='';
+    pCard.forEach((products)=>{
+        productList += `<div>
+                    <img src="${products.image}" alt="">
+                    <div>
+                        <a href="#">${products.des}</a><br>
+                        <bdi><span>$</span>${products.price}</bdi>
+                    </div>
+                     <div class="button-cover">
+                       <div>
+                        <button class="banner-button">${products.cart}</button>
+                        </div>
+                    </div>
+                </div>`
+    })
+    productContainer.innerHTML = productList;
+}
+
+bestSeller(product, 'product-container');
+
+//  // bset selling products
+
+
+const fProduct = [
+    {
+        image: "./assets/yamamoto.jpg",
+        price: "$239.99-$250.00",
+        cart: "Add to cart",
+        des: "Y-3 by Yohji Yamamoto"
+    },
+    {
+        image: "./assets/product-bagpack2.jpg",
+        price: "67.50",
+        cart: "Add to cart",
+        des: "Osprey Tailia"
+    },
+    {
+        image: "./assets/product-shoe2.jpg",
+        price: "127.99",
+        cart: "Add to cart",
+        des: "On Cloudflyer"
+    },
+    {
+        image: "./assets/product-bra.jpg",
+        price: "34.99",
+        cart: "Add to cart",
+        des: "Alphaskin Sports Bra"
+    },
+    {
+        image: "./assets/product-shoe.jpg",
+        price: "52.66",
+        cart: "Add to cart",
+        des: "Ignite Limitless Leather"
+    }
+
+]
+const featProduct = (fCard, fContainer) => {
+    const fproductContainer = document.getElementById(fContainer);
+    let fproductList ='';
+    fCard.forEach((fproducts)=>{
+        fproductList += `<div>
+                    <img src="${fproducts.image}" alt="">
+                    <div>
+                        <a href="#">${fproducts.des}</a><br>
+                        <bdi><span>$</span>${fproducts.price}</bdi>
+                    </div>
+                     <div class="button-cover">
+                       <div>
+                        <button class="banner-button">${fproducts.cart}</button>
+                        </div>
+                    </div>
+                </div>`
+    })
+    fproductContainer.innerHTML = fproductList;
+}
+
+bestSeller(fProduct, 'f-container');
+
+                        
