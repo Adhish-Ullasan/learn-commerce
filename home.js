@@ -215,6 +215,7 @@ const createBanner = (banner1 , bannerContainer) => {
 createBanner(bannerSection, 'banner-container');
 
 
+// video
 
 
 const btn = document.getElementById("playbutton");
