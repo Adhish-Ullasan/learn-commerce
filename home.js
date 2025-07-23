@@ -232,24 +232,28 @@ btn.addEventListener("submit" , function(){
 
 const product = [
     {
+        id: "pr1",
         image: "./assets/shoelow.jpg",
         price: "77.99",
         cart: "Add to cart",
         des: "UA Spawn Low"
     },
     {
+        id: "pr2",
         image: "./assets/fanorak.jpg",
         price: "76.99",
         cart: "Add to cart",
         des: "The North Face Fanorack 2.0"
     },
     {
+        id: "pr3",
         image: "./assets/sleepingbag.jpg",
         price: "299.99",
         cart: "Add to cart",
         des: "Small Sleeping Bag"
     },
     {
+        id: "pr4",
         image: "./assets/jacket.jpg",
         price: "76.99",
         cart: "Add to cart",
@@ -261,7 +265,7 @@ const bestSeller = (pCard, pContainer) => {
     const productContainer = document.getElementById(pContainer);
     let productList ='';
     pCard.forEach((products)=>{
-        productList += `<div>
+        productList += `<div id="${products.id}">
                     <img src="${products.image}" alt="">
                     <div>
                         <a href="#">${products.des}</a><br>
@@ -284,30 +288,35 @@ bestSeller(product, 'product-container');
 
 const fProduct = [
     {
+        id: "pr5",   
         image: "./assets/yamamoto.jpg",
         price: "$239.99-$250.00",
         cart: "Add to cart",
         des: "Y-3 by Yohji Yamamoto"
     },
     {
+        id: "pr6",
         image: "./assets/product-bagpack2.jpg",
         price: "67.50",
         cart: "Add to cart",
         des: "Osprey Tailia"
     },
     {
+        id: "pr7",
         image: "./assets/product-shoe2.jpg",
         price: "127.99",
         cart: "Add to cart",
         des: "On Cloudflyer"
     },
     {
+        id: "pr8",
         image: "./assets/product-bra.jpg",
         price: "34.99",
         cart: "Add to cart",
         des: "Alphaskin Sports Bra"
     },
     {
+        id: "pr9",
         image: "./assets/product-shoe.jpg",
         price: "52.66",
         cart: "Add to cart",
@@ -319,7 +328,7 @@ const featProduct = (fCard, fContainer) => {
     const fproductContainer = document.getElementById(fContainer);
     let fproductList ='';
     fCard.forEach((fproducts)=>{
-        fproductList += `<div>
+        fproductList += `<div ${fproducts.id}>
                     <img src="${fproducts.image}" alt="">
                     <div>
                         <a href="#">${fproducts.des}</a><br>
