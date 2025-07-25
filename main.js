@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded",function(){
 })
 
 
+//Add Footer to other pages
+
 document.addEventListener("DOMContentLoaded",function(){
 
     fetch ('footer.html')
