@@ -4,7 +4,7 @@
 
 document.addEventListener("DOMContentLoaded",function(){
 
-    fetch('index.html')
+    fetch('header.html')
             .then(response => response.text())
             .then(data=>{
 
