@@ -1,2 +1,2 @@
-// Redirect the user to a new URL
+// Redirect the user to a home page
 window.location.href = 'home.html';
