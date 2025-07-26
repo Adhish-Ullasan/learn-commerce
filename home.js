@@ -24,29 +24,6 @@ const blogPost = [
         readmore: "READ MORE"
     }
 ]
-const featuredBlogs = [
-    {
-        image:"./assets/blog-1.jpg",
-        date: "June 2024",
-        comments: "0",
-        title: "Sed adipisicing ornare",
-        readmore: "READ MORE"
-    },
-    {
-        image:"./assets/blog-2.jpg",
-        date: "June 2024",
-        comments: "1",
-        title: "Aenean dignissim pellentessque",
-        readmore: "READ MORE"
-    },
-    {
-        image:"./assets/blog-3.jpg",
-        date: "June 2024",
-        comments: "0",
-        title: "Quisque volupat mattis",
-        readmore: "READ MORE"
-    }
-]
 
     /**
      * 
@@ -63,7 +40,7 @@ const featuredBlogs = [
         
         cardsList += `<div class="card-1">
                             <div class="card-img-wrap">
-                                <img src="${blog.image}" alt="blog-1">
+                                <img src="${blog.image}"  alt="blog-1">
                             </div>
                             <div class="card-des">
                                 <div class="date">
@@ -83,7 +60,7 @@ const featuredBlogs = [
         
     })
 
-    console.log(cardsList)
+    // console.log(cardsList)
     blogContainer.innerHTML = cardsList
     }
 
@@ -126,7 +103,7 @@ const createInstaPost = (insta, instaContainer)=>{
                             <img src=${instaPic.image} alt="insta1">
                         </div>`
     })
-    console.log(postList);
+    // console.log(postList);
     instagram.innerHTML = postList;
     instagram.classList.add("contianer");
 }
@@ -208,7 +185,7 @@ const createBanner = (banner1 , bannerContainer) => {
 
     banner.innerHTML = bannerList;
 
-    console.log(banner)
+    // console.log(banner)
 
 }
 
@@ -232,28 +209,28 @@ btn.addEventListener("submit" , function(){
 
 const product = [
     {
-        id: "pr1",
+        id: 1,
         image: "./assets/shoelow.jpg",
         price: "77.99",
         cart: "Add to cart",
         des: "UA Spawn Low"
     },
     {
-        id: "pr2",
+        id: 2,
         image: "./assets/fanorak.jpg",
         price: "76.99",
         cart: "Add to cart",
         des: "The North Face Fanorack 2.0"
     },
     {
-        id: "pr3",
+        id: 3,
         image: "./assets/sleepingbag.jpg",
         price: "299.99",
         cart: "Add to cart",
         des: "Small Sleeping Bag"
     },
     {
-        id: "pr4",
+        id: 4,
         image: "./assets/jacket.jpg",
         price: "76.99",
         cart: "Add to cart",
@@ -265,7 +242,7 @@ const bestSeller = (pCard, pContainer) => {
     const productContainer = document.getElementById(pContainer);
     let productList ='';
     pCard.forEach((products)=>{
-        productList += `<div id="${products.id}">
+        productList += `<div id="${products.id}" class='product-card'>
                     <img src="${products.image}" alt="">
                     <div>
                         <a href="#">${products.des}</a><br>
@@ -283,40 +260,73 @@ const bestSeller = (pCard, pContainer) => {
 
 bestSeller(product, 'product-container');
 
-//  // bset selling products
+
+// select an element 
+
+const productCards = document.querySelectorAll('.product-card')
+
+
+
+productCards.forEach(el=> {
+    el.addEventListener('click', (event)=> {
+        event.preventDefault();
+        const productId = event.currentTarget.id
+
+        var url = new URL("http://127.0.0.1:5501/singleproduct.html");
+
+        url.searchParams.append('id', productId);
+        url.searchParams.append('title', 'prod');
+
+        window.location.href = url
+
+        
+
+        // console.log(window.location)
+        // const urlParams = new URLSearchParams(window.location.search);
+
+        // urlParams.set('id', productId);
+        // window.location.search = urlParams;
+
+    })
+
+})
+
+// select an element 
+
+//  // featured products
 
 
 const fProduct = [
     {
-        id: "pr5",   
+        id: 5,   
         image: "./assets/yamamoto.jpg",
         price: "$239.99-$250.00",
         cart: "Add to cart",
         des: "Y-3 by Yohji Yamamoto"
     },
     {
-        id: "pr6",
+        id: 6,
         image: "./assets/product-bagpack2.jpg",
         price: "67.50",
         cart: "Add to cart",
         des: "Osprey Tailia"
     },
     {
-        id: "pr7",
+        id: 7,
         image: "./assets/product-shoe2.jpg",
         price: "127.99",
         cart: "Add to cart",
         des: "On Cloudflyer"
     },
     {
-        id: "pr8",
+        id: 8,
         image: "./assets/product-bra.jpg",
         price: "34.99",
         cart: "Add to cart",
         des: "Alphaskin Sports Bra"
     },
     {
-        id: "pr9",
+        id: 9,
         image: "./assets/product-shoe.jpg",
         price: "52.66",
         cart: "Add to cart",
@@ -342,8 +352,10 @@ const featProduct = (fCard, fContainer) => {
                 </div>`
     })
     fproductContainer.innerHTML = fproductList;
+    // console.log(fproductList);
 }
 
 bestSeller(fProduct, 'f-container');
 
-                        
+
+

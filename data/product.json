@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "image": "./assets/shoelow.jpg",
+      "price": "77.99",
+      "cart": "Add to cart",
+      "des": "UA Spawn Low"
+    },
+    {
+      "id": 2,
+      "image": "./assets/fanorak.jpg",
+      "price": "76.99",
+      "cart": "Add to cart",
+      "des": "The North Face Fanorack 2.0"
+    },
+    {
+      "id": 3,
+      "image": "./assets/sleepingbag.jpg",
+      "price": "299.99",
+      "cart": "Add to cart",
+      "des": "Small Sleeping Bag"
+    },
+    {
+      "id": 4,
+      "image": "./assets/jacket.jpg",
+      "price": "76.99",
+      "cart": "Add to cart",
+      "des": "WaterTight jacket"
+    }
+  ]
