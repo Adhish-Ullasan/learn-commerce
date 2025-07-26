@@ -35,7 +35,7 @@ a {
     align-items: center;
     position: absolute;
     top: 28%;
-    left: 16%;
+    width:100%;
     color:white;
     gap: 15px
 }
