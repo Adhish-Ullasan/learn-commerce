@@ -468,7 +468,7 @@ a {
     text-align:center;
 }
 
-.productCards > div {
+.productCards > div:hover {
     box-shadow: 15px 10px 20px 10px whitesmoke;
     
  }
@@ -492,7 +492,7 @@ a {
     margin-bottom: 20px;
  }
 
- #f-container > div:hover {
+ #f-container > div {
     box-shadow: 15px 10px 20px 10px whitesmoke;
  }
 
