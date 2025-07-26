@@ -49,7 +49,7 @@ const productDetails = [
         },
 
         {
-                image : "./assets/product-bagpack2.jpg.jpg",
+                image : "./assets/product-bagpack2.jpg",
                 itemName : "Osprey Tailia",
                 price : {
 
@@ -128,10 +128,38 @@ const productDetails = [
                 price : {
 
                         currency:"$",
-                        amount: 239.99-250.00,
+                        amount: 239.99 - 250.00,
                 },
                 button:"ADD TO CART",
                 checkbox:"Add to wishlist"
         },
 ]
 
+const productList = (items , containerid) => {
+
+        const productContainer = document.getElementById(containerid)
+
+        let itemDetails = ''
+
+        items.forEach((item) => {
+
+                itemDetails += `<div class = "firstItem">
+                                        <img src="${item.image}"alt="">
+                                        <div>
+                                                <a href="#">${item.itemName}</a><br>
+                                                <bdi><span>$</span>${item.price.amount}</bdi>
+                                        </div>
+                                        <div class="primaryButton">
+                                                <div>
+                                                        <button>Add to cart</button>
+                                                </div>
+                                        </div>
+                                </div>`
+                
+        });
+
+        productContainer.innerHTML = itemDetails
+
+}
+
+productList(productDetails,'productItems')
