@@ -471,8 +471,10 @@ a {
  }
 
  footer {
-    padding-bottom: 1rem;
+      padding-bottom: 1rem;
       font: normal 300 1.0rem / 1.8 Poppins, sans-serif;
+      background-color: #afd2e9f2;
+      padding-top: 43px;
 
  }
 
