@@ -88,6 +88,10 @@ h1 {
     flex-basis: 30%;
 }
 
+.filterNav > a {
+  color: #fcb941;
+}
+
 #black {
     color: black;
 }
@@ -210,4 +214,23 @@ h1 {
 
 .drop {
   flex-basis: 30%;
+}
+
+.sort > div:first-child {
+  display: contents;
+}
+
+.sort {
+  gap: 1rem;
+}
+
+.sort > div p {
+  color: #000;
+  font-weight: 500;
+}
+
+.sortingButton {
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
