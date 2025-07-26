@@ -34,8 +34,8 @@ a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 28%;
-    left: 16%;
+    top: 40%;
+    width:100%;
     color:white;
     gap: 15px
 }
@@ -492,7 +492,7 @@ a {
     margin-bottom: 20px;
  }
 
- #f-container > div:hover {
+ #f-container > div {
     box-shadow: 15px 10px 20px 10px whitesmoke;
  }
 

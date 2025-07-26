@@ -21,8 +21,18 @@ body {
 }
 
 header {
-background-color: var(--primary-color);
-/* margin-bottom: 2rem; */
+    transition: .5s ease top;
+}
+
+.fixed-bg-none {
+    position: absolute; 
+    width: 100%;
+    top: 0;
+    background: none
+}
+
+.hidden {
+    display: none !important;
 }
 
 
@@ -31,7 +41,20 @@ background-color: var(--primary-color);
     margin:0 auto;
 }
 
+.scroll-navbar {
+    background-color: #1d597e;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
             /* nav */
 
 
