@@ -95,10 +95,6 @@ nav ul a {
     color: var(--secondary-color);
     text-decoration: none;
 }
-
-.hr{
-    border-bottom: 0.5px solid #646262;
-}
     
 
 /* bottom-nav */
@@ -172,7 +168,7 @@ nav ul a {
 }
 
 .seperator{
-    border-bottom:1px solid var(--secondary-color) ;
+    border-bottom:1px solid #878686 ;
     margin-bottom: 30px;
 }
 
