@@ -359,3 +359,24 @@ bestSeller(fProduct, 'f-container');
 
 
 
+
+
+
+window.addEventListener('scroll', event => {
+    console.log('hello world')
+    const height = 150;
+    const { scrollTop } = event.target.scrollingElement;
+    const header = document.querySelector('#header')
+    if (scrollTop >= height) {
+        console.log(scrollTop, 'scroll')
+        header.classList.add('scroll-navbar')
+        header.classList.remove('fixed-bg-none')
+        document.getElementById('navItems').classList.add('hidden')
+        
+    } else {
+        document.getElementById('navItems').classList.remove('hidden')
+        header.classList.remove('scroll-navbar')
+        header.classList.add('fixed-bg-none')
+    }
+    // document.querySelector('#header').classList.toggle('sticky', scrollTop >= height);
+});
