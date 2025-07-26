@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home-page</title>
-      
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     
     <body>
@@ -16,12 +16,12 @@
 
         <!-- HOME BACKGROUND  -->
 
-        <section id="bg-img">
-            <div id="img1">
+        <section id="bg-img" data-aos="fade-up">
+            <div id="img1"data-aos="fade-up">
             </div>
             
            <div class="bg-des">
-            <div class="bg-h4">
+            <div class="bg-h4" data-aos="fade-up">
                 <h4>PREMIUM OUTDOOR GEAR & CLOTHING</h4>
             </div>
             <div class="bg-h3">
@@ -417,6 +417,10 @@
             <div id="footer-placeholder"></div>
     
             <script src="main.js"></script>
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
     </body>
    
 </html>
