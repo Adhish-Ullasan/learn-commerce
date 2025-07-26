@@ -18,8 +18,12 @@ const productDetails = [
                 price : {
 
                         currency:"$",
-                        amount: 52.66-62.55
+                        amount: {
+                                start: 52.66,
+                                end: 62.55
+                        },
                 },
+                isPriceRange:true,
                 button:"ADD TO CART",
                 checkbox:"Add to wishlist"
         },
@@ -128,10 +132,14 @@ const productDetails = [
                 price : {
 
                         currency:"$",
-                        amount: 239.99 - 250.00,
+                        amount: {
+                                start: 239.99,
+                                end: 259.99
+                        },
                 },
+                isPriceRange: true,
                 button:"ADD TO CART",
-                checkbox:"Add to wishlist"
+                checkbox:"Add to wisishlt"
         },
 ]
 
@@ -147,7 +155,7 @@ const productList = (items , containerid) => {
                                         <img src="${item.image}"alt="">
                                         <div>
                                                 <a href="#">${item.itemName}</a><br>
-                                                <bdi><span>$</span>${item.price.amount}</bdi>
+                                                <bdi>${item.price.currency}<span>${item.isPriceRange ? `${item.price.amount.start} - ${item.price.amount.end}` : item.price.amount }</span></bdi>
                                         </div>
                                         <div class="primaryButton">
                                                 <div>
