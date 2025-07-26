@@ -275,7 +275,7 @@ productCards.forEach(el=> {
         var url = new URL("http://127.0.0.1:5501/singleproduct.html");
 
         url.searchParams.append('id', productId);
-        url.searchParams.append('title', 'prod');
+        
 
         window.location.href = url
 
