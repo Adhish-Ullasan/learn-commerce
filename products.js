@@ -1,17 +1,137 @@
-        // const optionMenu = document.querySelector(".select-menu"),
-        // selectBtn = optionMenu.querySelector(".select-btn"),
-        // options = optionMenu.querySelectorAll(".option"),
-        // sBtn_text = optionMenu.querySelector(".sBtn-text");
+const productDetails = [
 
-        // selectBtn.addEventListener("click", () =>
-        // optionMenu.classList.toggle("active")
-        // );
+        {
+                image : "./assets/product-bra.jpg",
+                itemName : "Alphaskin Sports Bra",
+                price : {
 
-        // options.forEach((option) => {
-        // option.addEventListener("click", () => {
-        // let selectedOption = option.querySelector(".option-text").innerText;
-        // sBtn_text.innerText = selectedOption;
+                        currency:"$",
+                        amount: 34.99
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
 
-        // optionMenu.classList.remove("active");
-        // });
-        // });
+        {
+                image : "./assets/product-shoe.jpg",
+                itemName : "Ignite Limitless Leather",
+                price : {
+
+                        currency:"$",
+                        amount: 52.66-62.55
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/product-bagpack.jpg",
+                itemName : "Marmot Empire Daypack",
+                price : {
+
+                        currency:"$",
+                        amount: 59.99
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/product-shoe2.jpg",
+                itemName : "On Cloudflyer",
+                price : {
+
+                        currency:"$",
+                        amount: 127.99
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/product-bagpack2.jpg.jpg",
+                itemName : "Osprey Tailia",
+                price : {
+
+                        currency:"$",
+                        amount: 67.50,
+                        previousAmount: "was 150"
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/sleepingbag.jpg",
+                itemName : "Small Sleeping Bag",
+                price : {
+
+                        currency:"$",
+                        amount: 299.99,
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/fanorak.jpg",
+                itemName : "The North Face Fanorack 2.0",
+                price : {
+
+                        currency:"$",
+                        amount: 76.99,
+                        previousAmount: "was 109.99"
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/helmet.jpg",
+                itemName : "Troy Lee Designs A1 MIPS Bike Helmet",
+                price : {
+
+                        currency:"$",
+                        amount:150.00,
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/shoelow.jpg",
+                itemName : "UA Spawn Low",
+                price : {
+
+                        currency:"$",
+                        amount: 77.99,
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/jacket.jpg",
+                itemName : "WaterTight jacket",
+                price : {
+
+                        currency:"$",
+                        amount: 76.99,
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+
+        {
+                image : "./assets/yamamoto.jpg",
+                itemName : "Y-3 by Yohji Yamamoto",
+                price : {
+
+                        currency:"$",
+                        amount: 239.99-250.00,
+                },
+                button:"ADD TO CART",
+                checkbox:"Add to wishlist"
+        },
+]
+
