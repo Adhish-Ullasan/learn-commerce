@@ -354,7 +354,7 @@ a {
 }
 .stay-h4 {
      font-size:13px;
-     color:#6f6868;
+     color:var(--font-color-type2)
      
 }
 
