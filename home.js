@@ -291,9 +291,7 @@ productCards.forEach(el=> {
 
 })
 
-// select an element 
-
-//  // featured products
+//// featured products
 
 
 const fProduct = [

@@ -113,10 +113,6 @@ productContainer.innerHTML = `
     
 </div>
 `
-
-
-
-
 // const singleProduct = (obj)=> {
 //     const productParams = new URLSearchParams(window.Location.search).get(id)
 // }
